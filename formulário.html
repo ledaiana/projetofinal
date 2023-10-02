@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale conosco</title>
+    <link rel="stylesheet" href="formulário.css">
+</head>
+<body>
+    <div class="container">
+        <h2>FALE CONOSCO</h2>
+        <form action="processar_formulario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email"> <table> Telefone</table></label>
+            <input type="text" id="telefone" name="telefone" required>
+
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+           
+            <input type="submit" value="Enviar">
+
+            <!-- Botão de Localização -->
+            <a href="https://maps.google.com/maps?q=-12.992671512424034, -38.45527608284136" target="_blank">
+                <img src="img/google.png" alt="Ícone de Localização" class="location-icon">
+        </form>
+    </div>
+
+    <a class="button" href="index.html">Voltar à Página Principal</a>
+</body>
+</html>

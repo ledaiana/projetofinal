@@ -1,0 +1,95 @@
+body {
+    background-image: url("img/background1.jpg"); /* Adicione sua imagem de fundo aqui */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(250, 199, 231, 0.8);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto 0; /* 20px de margem superior, 0 nas laterais e automático na parte inferior */
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #0077FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+a.button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: rgba(253, 152, 231, 0.3);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.location-icon {
+    display: block;
+    margin-top: 20px;
+    margin-right:auto;
+    width: 50px; 
+    height: auto; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+    
+    input[type="text"],
+    textarea {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+    
+    input[type="submit"] {
+        padding: 8px 16px;
+    }
+    
+    a.button {
+        padding: 8px 16px;
+    }
+}

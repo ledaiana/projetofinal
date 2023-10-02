@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Uchen', serif;
+}
+.all-content{
+    background: linear-gradient(to bottom, #FFEBEE, #FFC0CB);
+   
+  }
+
+
+/* navbar */
+#navbar{
+   
+    padding-left: 60px;
+    font-weight: bold;
+    background-image: linear-gradient( #BFD7EA ,#FFC0CB );
+}
+
+#logo{
+    font-size: 25px;
+    color:#FFC0CB ;
+    text-shadow: 1px 1px 1px black ;
+    
+}
+#logo img{
+    margin-bottom: 10px;
+}
+.navbar-nav{
+    margin-left: 10px;
+}
+.nav-link{
+   color: white;
+   font-weight: bold;
+   margin-left: 50px;
+   transition: 0.5s ease;
+   text-shadow: 0.5px 0.5px 0.5px #FFEBEE ;
+}
+.nav-link:hover{
+    background-color: #A8A3D1;
+    color: white;
+    border-radius: 5px;
+}
+.icons{
+    margin-left: 30px;
+}
+.icons img{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.icons img:hover{
+    transform: translateY(-5px);
+}
+@media screen and (max-width:330px){
+    #logo{
+        font-size: 15px;
+    }
+}
+
+.home{
+    width: 100%;
+    height: 88.5vh;
+    display: flex;
+   background-image: url(img/b2.jpg);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 100px;
+}
+.home .img img{
+    width: 100%;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 60px;
+}
+.content h3{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+.changecontent::after{
+    content: ' ';
+    color:#845EC2 ;
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+}
+@keyframes changetext{
+    0%{content: "Todas as Ocasiões.";}
+    20%{content: "Todas as Pessoas.";}
+    50%{content: "Todos os Lugares.";}
+    60%{content: "Todas as Alegrias.";}
+    100%{content: "Todos os Encontros.";}
+}
+.content p{
+    color: white;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 0.5px#FFC0CB;
+}
+
+@media screen and (max-width:800px){
+    .content h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:860px){
+    .home{
+        height: 120vh;
+    }
+}
+@media screen and (max-width:560px){
+    .home{
+        height: 100vh;
+    }
+}
+@media screen and (max-width:330px){
+    .content h2{
+        font-size: 30px;
+    }
+    .content h3{
+        font-size: 30px;
+    }
+}
+
+
+
