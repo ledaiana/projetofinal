@@ -83,7 +83,7 @@
 }
 
 body {
-    background: linear-gradient(45deg, #f5d4eb, #f7a1da, #f48cc9 );
+    background: linear-gradient(45deg, #f5d4eb, #f7a1da,#f9b7dd );
     background-size: 600% 600%;
     animation: backgroundTransition 10s linear infinite;
   }
